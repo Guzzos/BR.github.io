@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Multimedia - EPD Albert Einstein N°1 | San Luis</title>
+    <meta name="description" content="Galería multimedia de la EPD Albert Einstein N°1: proyectos estudiantiles, eventos, innovación educativa y momentos destacados de nuestra comunidad.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Institucional Mejorado -->
+    <header class="header-institucional">
+        <div class="header-container">
+            <div class="logo-principal">
+                <img src="LOGOS 2025 (8).png" alt="Logo de la EPD Albert Einstein N°1" class="logo-a">
+                <div class="titulo-institucion">
+                    <h1>EPD Albert Einstein N°1</h1>
+                    <div class="dependencia">Escuela Pública Digital Innovadora</div>
+                </div>
+            </div>
+            <div class="logo-ulp-container">
+                <img src="LOGOS 2025 (10).png" alt="Logo de la Universidad de La Punta" class="logo-ulp">
+                <div class="texto-ulp">Universidad de La Punta</div>
+            </div>
+        </div>
+    </header>
+
+    <nav aria-label="Navegación principal">
+        <div class="nav-container">
+            <button class="menu-toggle" onclick="toggleMenu()" aria-expanded="false" aria-controls="navLinks">
+                <span class="sr-only">Abrir menú</span>
+                ☰
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="propuesta.html">Propuesta Pedagógica</a></li>
+                <li><a href="orientaciones.html">Orientaciones</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="galeria.html" class="active" aria-current="page">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero" aria-labelledby="galeria-title">
+            <div class="section-container">
+                <h1 id="galeria-title">Galería Multimedia</h1>
+                <p class="hero-subtitle">Descubre los momentos más destacados de nuestra comunidad educativa: innovación, proyectos y logros estudiantiles</p>
+            </div>
+        </section>
+
+        <!-- Filtros de Galería -->
+        <section class="gallery-filters" aria-labelledby="filters-title">
+            <div class="section-container">
+                <h2 id="filters-title" class="sr-only">Filtrar galería por categorías</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todos los Proyectos</button>
+                    <button class="filter-btn" data-filter="protesis">Prótesis 3D</button>
+                    <button class="filter-btn" data-filter="robotica">Robótica</button>
+                    <button class="filter-btn" data-filter="ciencias">Ciencias</button>
+                    <button class="filter-btn" data-filter="eventos">Eventos</button>
+                    <button class="filter-btn" data-filter="estudiantiles">Actividades Estudiantiles</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grid de Galería Principal -->
+        <section class="gallery-main" aria-labelledby="gallery-main-title">
+            <div class="section-container">
+                <h2 id="gallery-main-title" class="sr-only">Galería de proyectos y actividades</h2>
+                <div class="gallery-grid">
+                    
+                    <!-- Proyecto Prótesis 3D -->
+                    <article class="gallery-item" data-category="protesis">
+                        <div class="gallery-image"></div>
+                        <div class="gallery-badge">Proyecto Destacado</div>
+                        <div class="gallery-info">
+                            <h3>Proyecto de Prótesis 3D - Innovación con Impacto Social</h3>
+                            <p>Estudiantes de las agrupaciones Orión y Lepus desarrollan prótesis personalizadas utilizando impresión 3D y robótica para mejorar la calidad de vida de miembros de la comunidad.</p>
+                            <div class="gallery-meta">
+                                <div class="gallery-date">Julio 2025</div>
+                                <div class="gallery-category">Tecnología & Salud</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Competencias de Robótica -->
+                    <article class="gallery-item" data-category="robotica">
+                        <div class="gallery-image"></div>
+                        <div class="gallery-info">
+                            <h3>Competencias de Robótica Intercolegial</h3>
+                            <p>Nuestros estudiantes participan en competencias regionales de robótica, demostrando habilidades en programación, diseño y trabajo en equipo.</p>
+                            <div class="gallery-meta">
+                                <div class="gallery-date">Junio 2025</div>
+                                <div class="gallery-category">Robótica</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Feria de Ciencias -->
+                    <article class="gallery-item" data-category="ciencias">
+                        <div class="gallery-image"></div>
+                        <div class="gallery-info">
+                            <h3>Feria de Ciencias y Tecnología</h3>
+                            <p>Exposición de proyectos científicos desarrollados por estudiantes de la orientación en Ciencias Naturales, mostrando investigación aplicada y método científico.</p>
+                            <div class="gallery-meta">
+                                <div class="gallery-date">Mayo 2025</div>
+                                <div class="gallery-category">Ciencias</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Aula Maker -->
+                    <article class="gallery-item" data-category="robotica">
+                        <div class="gallery-image"></div>
+                        <div class="gallery-info">
+                            <h3>Aula Maker - Espacio de Innovación</h3>
+                            <p>Nuestro laboratorio equipado con impresoras 3D, kits de robótica y estaciones de trabajo para el desarrollo de proyectos creativos y tecnológicos.</p>
+                            <div class="gallery-meta">
+                                <div class="gallery-date">Abril 2025</div>
+                                <div class="gallery-category">Innovación</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Acto de Colación -->
+                    <article class="gallery-item" data-category="eventos">
+                        <div class="gallery-image"></div>
+                        <div class="gallery-info">
+                            <h3>Acto de Colación y Egresados</h3>
+                            <p>Celebración de la promoción de estudiantes que culminan su ciclo educativo en nuestra institución, reconociendo su esfuerzo y logros académicos.</p>
+                            <div class="gallery-meta">
+                                <div class="gallery-date">Diciembre 2024</div>
+                                <div class="gallery-category">Eventos</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyectos de Programación -->
+                    <article class="gallery-item" data-category="robotica">
+                        <div class="gallery-image"></div>
+                        <div class="gallery-info">
+                            <h3>Desarrollo de Aplicaciones Móviles</h3>
+                            <p>Estudiantes de Programación crean apps para resolver problemas de la comunidad, aplicando conocimientos en desarrollo full-stack y diseño UX/UI.</p>
+                            <div class="gallery-meta">
+                                <div class="gallery-date">Marzo 2025</div>
+                                <div class="gallery-category">Programación</div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Prensa y Medios -->
+        <section class="press-section" aria-labelledby="press-title">
+            <div class="section-container">
+                <h2 id="press-title" class="section-title">Reconocimiento en Medios</h2>
+                <p class="press-subtitle">Nuestro proyecto de prótesis 3D ha sido destacado en diversos medios de comunicación, reconociendo el impacto social y la innovación de nuestros estudiantes</p>
+                
+                <div class="press-grid">
+                    <!-- Agencia San Luis -->
+                    <article class="press-card">
+                        <div class="press-source">
+                            <div class="source-icon">📰</div>
+                            <div class="source-name">Agencia San Luis</div>
+                        </div>
+                        <h3>Alumnos de la 'Albert Einstein' diseñan prótesis para mejorar la calidad de vida de dos personas</h3>
+                        <div class="press-meta">
+                            <div class="press-date">
+                                <span>📅</span>
+                                <span>6 de Julio, 2025</span>
+                            </div>
+                            <div class="press-type press-type--article">Artículo</div>
+                        </div>
+                        <a href="https://agenciasanluis.com/2025/07/06/1071768-alumnos-de-la-albert-einstein-disenan-protesis-para-mejorar-la-calidad-de-vida-de-dos-personas/" 
+                           class="press-link" target="_blank" rel="noopener">
+                            <span>Leer artículo completo</span>
+                            <span class="link-icon">→</span>
+                        </a>
+                    </article>
+
+                    <!-- ULP Noticias -->
+                    <article class="press-card">
+                        <div class="press-source">
+                            <div class="source-icon">🎓</div>
+                            <div class="source-name">ULP Noticias</div>
+                        </div>
+                        <h3>Estudiantes diseñan prótesis para mejorar la calidad de vida de dos personas</h3>
+                        <div class="press-meta">
+                            <div class="press-date">
+                                <span>📅</span>
+                                <span>Julio, 2025</span>
+                            </div>
+                            <div class="press-type press-type--news">Noticia</div>
+                        </div>
+                        <a href="https://noticias.ulp.edu.ar/educacion/estudiantes-disenan-protesis-para-mejorar-la-calidad-de-vida-de-dos-personas-6811" 
+                           class="press-link" target="_blank" rel="noopener">
+                            <span>Ver en ULP Noticias</span>
+                            <span class="link-icon">→</span>
+                        </a>
+                    </article>
+
+                    <!-- ULP - Avances del Proyecto -->
+                    <article class="press-card">
+                        <div class="press-source">
+                            <div class="source-icon">🔬</div>
+                            <div class="source-name">ULP Noticias</div>
+                        </div>
+                        <h3>Estudiantes avanzan en el diseño de prótesis y realizan las primeras pruebas con pacientes</h3>
+                        <div class="press-meta">
+                            <div class="press-date">
+                                <span>📅</span>
+                                <span>Julio, 2025</span>
+                            </div>
+                            <div class="press-type press-type--news">Seguimiento</div>
+                        </div>
+                        <a href="https://noticias.ulp.edu.ar/educacion/estudiantes-de-la-albert-einstein-avanzan-en-el-diseno-de-protesis-y-realizan-las-primeras-pruebas-con-pacientes-6862" 
+                           class="press-link" target="_blank" rel="noopener">
+                            <span>Ver actualización</span>
+                            <span class="link-icon">→</span>
+                        </a>
+                    </article>
+
+                    <!-- YouTube - Noticia Mediodía -->
+                    <article class="press-card">
+                        <div class="press-source">
+                            <div class="source-icon">🎥</div>
+                            <div class="source-name">Canal 13 San Luis</div>
+                        </div>
+                        <h3>Noticia Mediodía - Entrevista especial sobre el proyecto de prótesis</h3>
+                        <div class="press-meta">
+                            <div class="press-date">
+                                <span>📅</span>
+                                <span>24 de Julio, 2025</span>
+                            </div>
+                            <div class="press-type press-type--video">Video</div>
+                        </div>
+                        <a href="https://www.youtube.com/live/r3TUojmgaKk?feature=shared&t=4680" 
+                           class="press-link" target="_blank" rel="noopener">
+                            <span>Ver entrevista (1h 18min)</span>
+                            <span class="link-icon">▶</span>
+                        </a>
+                    </article>
+
+                    <!-- YouTube - Gracias Por Estar -->
+                    <article class="press-card">
+                        <div class="press-source">
+                            <div class="source-icon">🎤</div>
+                            <div class="source-name">Radio Nacional</div>
+                        </div>
+                        <h3>Gracias Por Estar - Reportaje especial del proyecto</h3>
+                        <div class="press-meta">
+                            <div class="press-date">
+                                <span>📅</span>
+                                <span>12 de Julio, 2025</span>
+                            </div>
+                            <div class="press-type press-type--video">Entrevista</div>
+                        </div>
+                        <a href="https://www.youtube.com/live/fF6kLEWqy8A?si=0rqPU68Bfx_88LGj&t=2880" 
+                           class="press-link" target="_blank" rel="noopener">
+                            <span>Escuchar entrevista (48min)</span>
+                            <span class="link-icon">▶</span>
+                        </a>
+                    </article>
+
+                    <!-- YouTube - La Mañana Dimensión -->
+                    <article class="press-card">
+                        <div class="press-source">
+                            <div class="source-icon">📻</div>
+                            <div class="source-name">Radio Dimensión</div>
+                        </div>
+                        <h3>La Mañana de Dimensión - Cobertura especial del proyecto innovador</h3>
+                        <div class="press-meta">
+                            <div class="press-date">
+                                <span>📅</span>
+                                <span>24 de Julio, 2025</span>
+                            </div>
+                            <div class="press-type press-type--video">Reportaje</div>
+                        </div>
+                        <a href="https://www.youtube.com/live/1kCBTHcQBNg?si=NFK85C4lhtDaRtTh&t=3960" 
+                           class="press-link" target="_blank" rel="noopener">
+                            <span>Ver cobertura (1h 6min)</span>
+                            <span class="link-icon">▶</span>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Impacto en Medios -->
+        <section class="media-impact" aria-labelledby="impact-title">
+            <div class="section-container">
+                <h2 id="impact-title" class="section-title">Impacto Mediático</h2>
+                
+                <div class="impact-stats">
+                    <div class="impact-stat">
+                        <span class="stat-icon">📊</span>
+                        <span class="stat-number">6+</span>
+                        <span class="stat-label">Apariciones en Medios</span>
+                    </div>
+                    <div class="impact-stat">
+                        <span class="stat-icon">🎯</span>
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Tipos de Medio</span>
+                    </div>
+                    <div class="impact-stat">
+                        <span class="stat-icon">👥</span>
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">Pacientes Beneficiados</span>
+                    </div>
+                    <div class="impact-stat">
+                        <span class="stat-icon">🌟</span>
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Impacto Social Positivo</span>
+                    </div>
+                </div>
+
+                <div class="media-outlets">
+                    <div class="outlet-logo">Agencia San Luis</div>
+                    <div class="outlet-logo">ULP Noticias</div>
+                    <div class="outlet-logo">Canal 13</div>
+                    <div class="outlet-logo">Radio Nacional</div>
+                    <div class="outlet-logo">Radio Dimensión</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería Modal -->
+        <div class="gallery-modal" id="galleryModal">
+            <button class="modal-close" id="modalClose">×</button>
+            <button class="modal-nav modal-prev" id="modalPrev">‹</button>
+            <button class="modal-nav modal-next" id="modalNext">›</button>
+            <div class="modal-content">
+                <div class="modal-info">
+                    <h3 id="modalTitle">Título de la imagen</h3>
+                    <p id="modalDescription">Descripción de la imagen</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logos">
+                <img src="LOGOS 2025 (8).png" alt="Logo de la EPD Albert Einstein N°1" class="footer-logo">
+                <img src="LOGOS 2025 (10).png" alt="Logo de la Universidad de La Punta" class="footer-logo">
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2025 Escuela Pública Digital Albert Einstein N°1 - San Luis, Argentina</p>
+                <p>Institución dependiente de la Universidad de La Punta</p>
+                <p>Desarrollado con ❤️ para la comunidad educativa</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Filtrado de galería
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remover clase active de todos los botones
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Agregar clase active al botón clickeado
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'translateY(0)';
+                            }, 100);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+
+            // Efectos hover mejorados para las cards de prensa
+            const pressCards = document.querySelectorAll('.press-card');
+            pressCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px) scale(1.02)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+        });
+
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            const menuToggle = document.querySelector('.menu-toggle');
+            const isExpanded = navLinks.classList.toggle('active');
+            
+            menuToggle.setAttribute('aria-expanded', isExpanded);
+        }
+    </script>
+</body>
+</html>
