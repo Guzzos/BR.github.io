@@ -4816,3 +4816,18 @@ footer {
         font-size: 2rem;
     }
 }
+
+.map-container {
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.map-address {
+    background: var(--texto-claro);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--azul-marino);
+    font-size: 1rem;
+}
