@@ -220,10 +220,11 @@
             <div class="subtitle">Selecciona un nivel educativo</div>
         </div>
 
-<div class="level-card secondary">
+        <div class="levels-grid">
+            <div class="level-card secondary">
                 <div class="level-icon">🔬</div>
                 <h2>Nivel Secundario Bachillerato</h2>
-                <p>Educación  para estudiantes de 1° a 6° Año</p>
+                <p>Educación para estudiantes de 1° a 6° Año</p>
                 
                 <ul class="level-features">
                     <li>Sistema modular personalizado</li>
@@ -232,18 +233,13 @@
                     <li>Proyectos de impacto social</li>
                 </ul>
 
-                <a href="secundario.html" class="btn btn-secondary">
-                    Ingresar al Sitio
-                </a>
+                <a href="secundario.html" class="btn btn-secondary">Ingresar al Sitio</a>
             </div>
-        </div>
 
-        
-        <div class="levels-grid">
             <div class="level-card primary">
                 <div class="level-icon">📚</div>
                 <h2>Nivel Primario</h2>
-                <p>Educación  para estudiantes de 1° a 6° Grado</p>
+                <p>Educación para estudiantes de 1° a 6° Grado</p>
                 
                 <ul class="level-features">
                     <li>Aprendizaje personalizado</li>
@@ -252,12 +248,9 @@
                     <li>Exploración guiada</li>
                 </ul>
 
-                <button class="btn btn-disabled" onclick="showPrimaryMessage()">
-                    Próximamente
-                </button>
+                <button class="btn btn-disabled" onclick="showPrimaryMessage()">Próximamente</button>
             </div>
-
-            
+        </div>
 
         <div id="primaryMessage" class="construction-message" style="display: none;">
             <h3>🚧 Estamos trabajando para ofrecerte una mejor experiencia</h3>
@@ -279,40 +272,69 @@
             const message = document.getElementById('primaryMessage');
             message.style.display = 'block';
             
-            // Scroll suave al mensaje
+            message.scrollIntoView({ 
+                behavior: 's message = document.getElementById('primaryMessage');
+            message.style.display = 'block';
+            
             message.scrollIntoView({ 
                 behavior: 'smooth',
-                block: 'center'
+                blockmooth',
+                block:: 'center'
+            });
+ 'center'
             });
         }
 
-        // Efectos de hover mejorados
-        document.querySelectorAll('.level-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-10px)';
+        document.querySelectorAll('.        }
+
+        document.querySelectorAll('.level-card').level-card').forEach(card =>forEach(card => {
+            {
+            card.addEventListener('mouse card.addEventListener('mouseenter',enter', function() {
+                this.style.transform = 'translate function() {
+                this.style.transform = 'translateY(-Y(-10px)';
+            });
+            
+            card.addEventListener('mouseleave10px)';
             });
             
             card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
+               ', function() {
+                this.style.transform = this.style.transform = 'translate 'translateY(0)Y(0)';
+           ';
             });
         });
 
-        // Animación de entrada
-        document.addEventListener('DOMContentLoaded', function() {
-            const cards = document.querySelectorAll('.level-card');
+        });
+        });
+
+        document.addEventListener document.addEventListener('DOMContentLoaded', function() {
+            const cards =('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.level-card document.querySelectorAll('.level-card');
+            cards.forEach((card');
             cards.forEach((card, index) => {
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(30px)';
+               , index) => {
+                card.style.opacity = ' card.style.opacity = '0';
+                card.style.transform0';
+                card.style.transform = = 'translateY(30 'translateY(30px)';
                 
-                setTimeout(() => {
-                    card.style.transition = 'all 0.6s ease';
-                    card.style.opacity = '1';
-                    card.style.transform = 'translateY(0)';
-                }, index * 200);
+                setTimeoutpx)';
+                
+                setTimeout(() =>(() => {
+                    card.style {
+                    card.style.transition.transition = 'all  = 'all 0.0.6s ease';
+6s ease';
+                    card                    card.style.opacity =.style.opacity = '1 '1';
+                    card.style';
+                    card.style.transform =.transform = 'translateY( 'translateY(0)0)';
+                },';
+                }, index *  index * 200);
+            });
+       200);
             });
         });
+ });
     </script>
+</    </script>
 </body>
-
+body>
 </html>
-
